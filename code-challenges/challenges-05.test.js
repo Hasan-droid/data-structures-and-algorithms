@@ -126,7 +126,14 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
+  const newArray = arr.reduce((acc, val) => {
+    acc.push(val.name);
+    return acc;
+  }, [])
+  return newArray;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
